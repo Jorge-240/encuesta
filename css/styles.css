@@ -1,0 +1,157 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #88afa5;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: #35424a;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+form {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form input[type="submit"] {
+    background: #35424a;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background: #45a049;
+}
+
+.confirmation {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+/* Estilos inspirados en la imagen: fondo morado, tarjeta blanca con sombra */
+:root{
+    --purple-1:#6b46ff;
+    --purple-2:#4c2bdc;
+    --card-bg:#ffffff;
+    --accent:#3f8efc;
+    --success:#2f9e44;
+    --muted:#6b7280;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;}
+.bg{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background: linear-gradient(180deg,var(--purple-2),var(--purple-1));
+    padding:40px;
+}
+
+.outer-card{
+    width:420px;
+    max-width:95%;
+    padding:18px;
+    border-radius:18px;
+    background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
+    box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+}
+
+/* tarjeta interior */
+.card{
+    background:var(--card-bg);
+    border-radius:12px;
+    padding:22px;
+    box-shadow: 0 6px 16px rgba(43,43,43,0.18);
+}
+
+.card-header{display:flex;align-items:center;gap:12px;margin-bottom:12px}
+.card-header .icon{font-size:28px}
+.card-header h1{margin:0;font-size:20px}
+.subtitle{margin:0;color:var(--muted);font-size:13px}
+
+/* promo */
+.promo{
+    background:#2f9e44;
+    color:#fff;
+    padding:10px 12px;
+    border-radius:8px;
+    margin:12px 0 18px;
+    font-weight:600;
+}
+
+/* formulario */
+.field{margin-bottom:12px}
+label{display:block;margin-bottom:6px;font-size:13px;color:#374151}
+input[type="text"], input[type="email"], input[type="tel"]{
+    width:100%;
+    padding:10px 12px;
+    border-radius:6px;
+    border:1px solid #e5e7eb;
+    background:#fff;
+    font-size:14px;
+}
+input[type="checkbox"]{margin-right:8px}
+.interests{border:none;padding:0;margin:0 0 12px;color:#374151;font-size:14px}
+.interests label{display:block;margin:6px 0}
+
+.checkbox-field label{font-size:13px;color:#374151}
+
+.required{color:#e11d48}
+
+/* botones */
+.submit-btn{
+    width:100%;
+    background:var(--accent);
+    color:#fff;
+    border:none;padding:12px;border-radius:8px;font-weight:600;
+    cursor:pointer;font-size:15px;
+}
+.secondary-btn{
+    background:#f3f4f6;color:#111;border:1px solid #e5e7eb;padding:10px 14px;border-radius:8px;cursor:pointer;margin-right:8px;
+}
+.actions{display:flex;gap:8px;margin-top:16px;justify-content:flex-end}
+
+/* errores */
+.error{color:#e11d48;font-size:12px;height:14px;display:block;margin-top:6px}
+
+/* confirmación */
+.confirmation .summary{margin-top:8px;padding:12px;border-radius:8px;background:#f8fafc}
+.summary p{margin:6px 0;color:#111}
+.summary .tag{display:inline-block;background:#eef2ff;color:#3730a3;padding:6px 8px;border-radius:6px;margin-right:6px;margin-top:6px;font-size:13px}
+
+/* responsive */
+@media (max-width:480px){
+    .outer-card{padding:12px}
+}
